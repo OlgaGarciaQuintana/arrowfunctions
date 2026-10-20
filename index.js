@@ -1,0 +1,20 @@
+let datos = [ 
+{nombre: "Nacho", telefono: "966112233", edad: 40}, 
+{nombre: "Ana", telefono: "911223344", edad: 35}, 
+{nombre: "Mario", telefono: "611998877", edad: 15}, 
+{nombre: "Laura", telefono: "633663366", edad: 17} 
+]; 
+
+//imprimir datos:
+console.log(datos);
+
+//imprimir el primer elemento del array:
+console.log(datos[0]);
+
+//imprimir solo los nombres de las personas:
+let nombres=datos.map(persona => persona.nombre);
+console.log(nombres);
+
+//imprimir solo los mayores de edad:
+let mayoresDeEdad=datos.filter(persona => persona.edad >= 18);
+console.log(mayoresDeEdad);
